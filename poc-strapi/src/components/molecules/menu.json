@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_molecules_menus",
+  "info": {
+    "displayName": "menu",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.link"
+    }
+  }
+}

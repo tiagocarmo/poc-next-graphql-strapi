@@ -1,0 +1,32 @@
+version: '3.3'
+services:
+  project-model-graphql-api:
+    image: minutrade/project-model-graphql-api:{PACKAGE_VERSION}
+    secrets:
+      - interactions-token
+      - new-relic-key
+      - project-model-graphql-api-bonuz-consumer-token
+    networks:
+      - proxy
+    ports:
+      - "7976:7976"
+    environment:
+      - CORS_ALLOWED_ORIGINS="http://127.0.0.1:*,http://localhost:*,http://*.localhost:*"
+    deploy:
+      mode: replicated
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 5s
+      placement:
+        constraints: [node.labels.web == true]
+networks:
+  proxy:
+    external: true
+secrets:
+  interactions-token:
+    external: true
+  new-relic-key:
+    external: true
+  project-model-graphql-api-bonuz-consumer-token:
+    external: true

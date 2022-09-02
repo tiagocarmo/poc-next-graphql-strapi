@@ -1,0 +1,12 @@
+type CookieItem {
+  title: String
+  content: String
+}
+
+type PageCookie {
+  doc: [CookieItem]
+}
+
+type Query {
+  getPageCookie: PageCookie
+}

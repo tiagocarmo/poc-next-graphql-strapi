@@ -1,0 +1,12 @@
+POST http://localhost:7976/graphql
+Content-Type: application/json
+X-REQUEST-TYPE: GraphQL
+
+query getPageRule {
+  getPageRule {
+    doc {
+      title
+      content
+    }
+  }
+}

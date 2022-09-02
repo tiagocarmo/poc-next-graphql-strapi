@@ -1,0 +1,7 @@
+migrations/
+node_modules/
+coverage/
+log/
+minutrade-deploy-toolkit/
+.schema/
+.git

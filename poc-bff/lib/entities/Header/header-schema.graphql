@@ -1,0 +1,17 @@
+type ItemLink {
+  title: String
+  url: String
+  external: Boolean
+}
+
+type Link {
+  links: ItemLink
+}
+
+type Header {
+  menu: [Link]
+}
+
+type Query {
+  getHeader: Header
+}

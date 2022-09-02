@@ -1,0 +1,13 @@
+.vscode
+coverage/
+.circleci/
+test/
+
+node_modules/
+
+config/config.json
+.eslintignore
+.eslintrc
+.gitignore
+.scannerwork
+*.log

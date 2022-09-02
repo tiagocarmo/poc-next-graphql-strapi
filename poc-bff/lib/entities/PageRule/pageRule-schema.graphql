@@ -1,0 +1,12 @@
+type RuleItem {
+  title: String
+  content: String
+}
+
+type PageRule {
+  doc: [RuleItem]
+}
+
+type Query {
+  getPageRule: PageRule
+}

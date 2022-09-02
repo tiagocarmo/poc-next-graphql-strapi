@@ -1,0 +1,14 @@
+{
+  "extends": "@minutrade/eslint-config-minutrade/base",
+  "env": {
+    "node": true,
+    "mocha": true,
+    "es6": true
+  },
+  "rules": {
+    "no-underscore-dangle": 0
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_rules",
+  "info": {
+    "singularName": "page-rule",
+    "pluralName": "page-rules",
+    "displayName": "page-rule"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "doc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.doc"
+    }
+  }
+}

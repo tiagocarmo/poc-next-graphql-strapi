@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_cookies",
+  "info": {
+    "singularName": "page-cookie",
+    "pluralName": "page-cookies",
+    "displayName": "page-cookie"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "doc": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.doc"
+    }
+  }
+}
